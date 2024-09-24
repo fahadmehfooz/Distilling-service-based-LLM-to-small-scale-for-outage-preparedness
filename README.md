@@ -14,7 +14,7 @@ This project focuses on fine-tuning and knowledge distillation of large language
 distilling-llm-project/
 │
 
-├── Finetuneing_Teacher_Model.ipynb              # Fine-tuning Llama 7B using QLoRA and PEFT
+├── Finetuning_Teacher_Model.ipynb              # Fine-tuning Llama 7B using QLoRA and PEFT
 
 ├── Synthetic_Data_Generation_with_Scoring.ipynb # Generates synthetic datasets and scores them
 
