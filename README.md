@@ -17,8 +17,11 @@ distilling-llm-project/
 ├── Finetuneing_Teacher_Model.ipynb              # Fine-tuning Llama 7B using QLoRA and PEFT
 
 ├── Synthetic_Data_Generation_with_Scoring.ipynb # Generates synthetic datasets and scores them
+
 ├── Knowledge Distillation Llama to Gemma.ipynb  # Distillation from Llama 7B to Gemma 2B
+
 ├── README.md                                    # Project overview and instructions
+
 └── requirements.txt                             # List of dependencies for the project
 
 ## Notebooks
@@ -29,37 +32,28 @@ distilling-llm-project/
 
 ## Datasets
 
-Synthetic datasets are generated using Langchain and few-shot learning with Llama 405B. These datasets are scored for correctness using NVIDIA NeMoTron, achieving a 15% improvement in correctness scores.
-
-Access the synthetic datasets via this [Google Drive link](insert_link_here).
+- Synthetic datasets are generated using Langchain and few-shot learning with Llama 405B.
+- These datasets are scored for correctness using NVIDIA NeMoTron, achieving a 15% improvement in correctness scores.
 
 ## Installation
 
-```bash
-git clone https://github.com/your-username/distilling-llm-project.git
-cd distilling-llm-project
-pip install -r requirements.txt
+Running the Notebooks
+Fine-Tuning the Teacher Model:
 
-Usage
-Open and run the notebooks in the following order:
-Synthetic_Data_Generation_with_Scoring.ipynb
-Finetuneing_Teacher_Model.ipynb
-Knowledge Distillation Llama to Gemma.ipynb
-Follow the instructions within each notebook to execute the respective processes.
-Results
-Model Compression: 71% parameter reduction (LLaMA 7B to Gemma 2B)
-Performance Improvement: 40% faster response time
-Data Quality: 15% improvement in synthetic data correctness scores
+Open the Finetuneing_Teacher_Model.ipynb notebook.
+Execute the cells to fine-tune the Llama 7B model using QLoRA and PEFT on the synthetic datasets.
+Generating Synthetic Data:
 
-Future Work
-Further optimize the distillation process
-Explore new methods for generating higher-quality synthetic datasets
-Investigate applicability to other models and use cases
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgements
-Hugging Face for providing pre-trained models and libraries
-NVIDIA for NeMoTron scoring improvements
-LangChain for synthetic data generation tools
+Open the Synthetic_Data_Generation_with_Scoring.ipynb notebook.
+Run the cells to generate synthetic datasets using Langchain, and score the datasets with NVIDIA NeMoTron.
+
+## Knowledge Distillation:
+
+Open the Knowledge Distillation Llama to Gemma.ipynb notebook.
+Execute the steps for distilling the Llama 7B model to Gemma 2B, and evaluate the smaller model’s performance.
+
+## Results
+
+Model Compression: LLaMA 7B was successfully compressed into Gemma 2B, achieving a 71% parameter reduction.
+Performance Improvement: Response time improved by 40% with minimal loss in accuracy.
+Data Generation: High-quality synthetic data was generated, improving correctness scores by 15% via NVIDIA NeMoTron.
